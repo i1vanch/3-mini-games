@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <div class="header center">
+        <h1 class="header_title">Добро пожаловать на мой сайт !</h1>
+        <p class="header_text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a class="text_links" href="#">поехали</a> и <a class="text_links" href="#">приступай</a></p>
+        <button class="header_button">Поехали!</button>
+    </div>
+
+    <div class="box_games center">
+        <a href="#game1" class="game_link game_1" >Игра 1</a>
+        <a href="#game2" class="game_link game_2" >Игра 2</a>
+        <a href="#game3" class="game_link game_3" >Игра 3</a>
+    </div>
+    
+    <div id="game1" class="seasons center">
+        <div class="seasons_text_box">
+            <h1 class="seasons_title">Времена года!</h1>
+            <p class="header_text text1">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>            
+            <div class="box_button">
+                <a onclick="game1()" class="button" href="#">Играть!</a>
+            </div>
+            
+        </div>
+        <div class="seasons_img">
+            <img class="img_s" src="img/undraw_video_game_night_8h8m 1.svg" alt="video_game">
+        </div>
+    </div>
+    <div id="game2" class="seasons last center">
+        
+        <div class="seasons_text_box">
+            <h1 class="seasons_title">Запомни слова </h1>
+            <p class="header_text text1">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            
+            <div class="box_button">
+                <a onclick="game2()" class="button" href="#">Играть</a>
+            </div>
+            
+        </div>
+        <div class="seasons_img">
+            <img class="img_s" src="img/undraw_gaming_re_cma2 1.svg" alt="video_game">
+        </div>
+        
+    </div>
+
+    <div id="game3"  class="puzzle center">
+        <h1 class=" puzzle_title">Игра в загадки</h1>
+        <p class="puzzle_text" >Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        
+        <div class="box_button">
+            <a onclick="game3()" class="button" href="#">Играть!</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4 class="footer_t">Все права защищены</h4>
+    </div>
+
+    <script>
+        const HeaderButton = document.querySelector('.header_button');
+        const BoxGames = document.querySelector('.box_games');
+
+        function handleButtonClick() {
+            BoxGames.scrollIntoView({block: "center", behavior: "smooth"});
+        };
+
+        HeaderButton.addEventListener('click', handleButtonClick);
+        
+        function game1() {
+            let number = Number(prompt('Введите номер месяца:'));
+            if (!number) {
+                alert('Не хотите как хотите!');
+                return;
+            };
+            if (number<=0 ||number>=13) {
+                alert('Неверное число');
+            }else if (number === 1 || number ===2 || number === 12) {
+                alert('Зима');
+            }else if(number>=3 && number<=5) {
+                alert('Весна');
+            }else if(number>=6 && number<=8) {
+                alert('Лето');
+            }else {
+                alert('Осень');
+            };
+        };
+
+        function game2() {
+            let mas = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+            let result = mas.sort(() => Math.random() - 0.5);
+            alert(result);  //  для рандомного перемешивания массива
+
+            let mas1 = prompt('Чему равнялся первый элемент массива?');
+            let mas2 = prompt('Чему равнялся последний элемент массива?');
+
+            
+            if (mas1 === result[0] && mas2 === result[6] ) {
+                alert('Поздравляем, вы угадали оба элемента');
+            } else if (mas1 === result[0] || mas2 === result[6]) {
+                alert('Вы были близки к победе!');
+            }  else {
+                alert('К сожалению вы ответили неверно');
+            };
+
+        };
+
+        function game3() {
+            const puzzle = prompt('В брюшке — баня, в носу — решето, нос — хоботок, на голове — пупок, всего одна рука без пальчиков, и та — на спине калачиком.');
+
+            if (puzzle === 'чайник') {
+                alert('Ответ верный, вы выиграли!');
+            }else if(puzzle !== 'чайник') {
+                a = prompt('Неверно. Подсказка: его можно поставить на плиту');
+                if (a !== 'чайник') {
+                    b = prompt('Неверно. Подсказка: с ним можно сделать чай');
+                    if (b !== 'чайник') {
+                        alert('Вы проиграли');
+                    } else {
+                        alert('Ответ верный, вы выиграли!');
+                    };
+                } else {
+                    alert('Ответ верный, вы выиграли!');
+                };
+            }; 
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
+.header{
+    height: 1024px;
+    background-image: url(img/bgi1.svg);
+}
+
+.header_title{
+    width: 788.78px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    padding-top: 217px;
+    margin-bottom: 32px;
+}
+
+.header_text{
+    width: 481px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: gray;
+    margin-bottom: 44px;
+
+}
+
+.text_links{
+    text-decoration-line: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.text_links:hover{
+    text-decoration-line: underline;
+}
+
+
+.header_button{
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    outline: none;
+    border: #9C0332;
+}
+
+.header_button:hover{
+    background: #FFFFFF;
+    color: #000915;
+    transition-duration: 0.6s;
+}
+
+
+
+.box_games{
+    background: #000915;
+    display: flex;
+    
+    gap: 32px;
+}
+
+.game_1{
+    width: 379px;
+    height: 300px;
+    background-image: url(img/game_1.svg);
+    margin-top: 128px;
+    padding-top: 238px;
+    box-sizing: border-box;
+    margin-bottom: 128px;
+}
+
+.game_1:hover{
+    border: 3px solid #44d2ff;
+    border-radius: 16px;
+    transition-duration: 0.7s;
+}
+
+.game_2{
+    width: 379px;
+    height: 300px;
+    background-image: url(img/game_2.svg);
+    margin-top: 128px;
+    padding-top: 238px;
+    box-sizing: border-box;
+    margin-bottom: 128px;
+}
+.game_2:hover{
+    border: 3px solid #44d2ff;
+    border-radius: 16px;
+    transition-duration: 0.7s;
+}
+.game_3{
+    width: 379px;
+    height: 300px;
+    background-image: url(img/game_3.svg);
+    margin-top: 128px;
+    padding-top: 238px;
+    box-sizing: border-box;
+    margin-bottom: 128px;
+}
+.game_3:hover{
+    border: 3px solid #44d2ff;
+    border-radius: 16px;
+    transition-duration: 0.7s;
+}
+
+
+
+.game_link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-decoration-line: none;
+    padding-left: 32px;
+
+
+}
+
+.game_link:hover{
+    text-decoration-line: underline;
+    
+}
+
+.seasons_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.seasons{
+    background-image: url(img/bg_seasons.svg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 135px
+}
+
+.seasons_text_box{
+    margin-top: 282px;
+    margin-bottom: 284px;
+}
+.seasons_img{
+    margin-top: 233px;
+}
+
+.text1{
+    width: 550px;
+}
+
+.box_button{
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box_button:hover{
+    background: orangered;
+    transition-duration: 0.6s;
+}
+
+.button{
+    text-decoration-line: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.last{
+    padding-bottom: 90px;
+}
+
+
+.puzzle{
+    background-image: url(img/puzzle.img.svg);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.puzzle_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 276px;
+}
+
+.puzzle_text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
+.footer{
+    background: #000915;
+    height: 80px;
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footer_t{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding-top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1229px){
+    .box_games{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_title{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: auto;
+    }
+
+    .game_1{
+        margin-bottom: 0;
+    }
+    .game_2{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .game_3{
+        margin-top: 0;
+        margin-bottom: 127px;
+    }
+
+    .seasons_text_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seasons_title{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: auto;
+    }
+    .text1{
+        width: auto;
+    }
+    
+}
+
+@media (max-width: 526px){
+    .img_s{
+        width: 344px;
+        height: 236px;
+    }
+    .seasons_text_box{
+        margin-bottom: 0;
+        margin-top: 51px;
+    }
+    .seasons_img{
+        margin-top: 0;
+        margin-bottom: 85px;
+    }
+    .seasons{
+        gap: 64px;
+    }
+}
+
+
+@media (max-width: 375px){
+    .header{
+        background-image: url(img/Rectangle\ 1.svg);
+        height: 735px;
+    }
+    .header_title{
+        width: 343px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .header_text{
+        width: 343px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        
+        text-align: center;
+    }
+
+    
+
+    .game_1{
+        width: 343px;
+        border-radius: 16px;
+        margin-bottom: 0;
+    }
+    .game_2{
+        width: 343px;
+        border-radius: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .game_3{
+        width: 343px;
+        border-radius: 16px;
+        margin-top: 0;
+        margin-bottom: 127px;
+    }
+
+    .puzzle{
+        height: 600px;
+    }
+
+    .puzzle_title{
+        padding-top: 0;
+    }
+}
